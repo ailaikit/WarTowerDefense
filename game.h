@@ -13,9 +13,6 @@
 #include <QTimer>
 #include <random>
 
-namespace TOOLTIP{
-    const QString BASE = "tooltip_base.png";
-}
 
 enum State {MENU, INGAME, CLEARED, PAUSED};
 

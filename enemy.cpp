@@ -4,20 +4,20 @@ Enemy::Enemy(Enemy_Type type, QPointF p) : GameObject(), currentWaypoint(0),
      dead(false), spawnDelay(2000), faceRight(false)
 {
     if(type == Enemy_Type::NORMAL){
-        leftAnimation = new Image(ENEMY::NORMAL_L);
-        rightAnimation = new Image(ENEMY::NORMAL_R);
+        leftAnimation = new Image(":/img/white ghost left.png");
+        rightAnimation = new Image(":/img/white ghost right.png");
         health = 3;
         score = 10;
     }
     else if(type == Enemy_Type::BADASS){
-        leftAnimation = new Image(ENEMY::BADASS_L);
-        rightAnimation = new Image(ENEMY::BADASS_R);
+        leftAnimation = new Image(":/img/red ghost left.png");
+        rightAnimation = new Image(":/img/red ghost right.png");
         health = 10;
         score = 15;
     }
     else if(type == Enemy_Type::BAT){
-        leftAnimation = new Image(ENEMY::BAT_L);
-        rightAnimation = new Image(ENEMY::BAT_R);
+        leftAnimation = new Image(":/img/bat_l.png");
+        rightAnimation = new Image(":/img/bat_r.png");
         health = 15;
         score = 20;
     }

@@ -11,15 +11,15 @@ int Tower::iceCount = 0;
 int Tower::earthCount = 0;
 
 Tower::Tower(QString fileName, QRect tile) : GameObject(fileName) , coolDown(false){
-    if(fileName == TOWER::TOWER_FIRE){
+    if(fileName == ":/img/fire.png"){
         type = FIRE;
         fireCount++;
     }
-    else if(fileName == TOWER::TOWER_ICE){
+    else if(fileName == ":/img/ice.png"){
         type = ICE;
         iceCount++;
     }
-    else if(fileName == TOWER::TOWER_EARTH){
+    else if(fileName == ":/img/rock.png"){
         type = EARTH;
         earthCount++;
     }

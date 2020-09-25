@@ -414,20 +414,20 @@ void Game::cleanMenu(){
 void Game::loadInGame(){
     score_title = mergeChars("score",1,NORMAL);
     wave_title = mergeChars("wave",1,NORMAL);
-    tileHighlight = new Image(CONSTANTS::HIGHLIGHT_TILE);
-    towerOptions.push_back(new Image(CONSTANTS::TOWER_FIRE));
-    towerOptions.push_back(new Image(CONSTANTS::TOWER_ICE));
-    towerOptions.push_back(new Image(CONSTANTS::TOWER_EARTH));
-    towerOptHighlight = new Image(CONSTANTS::TOWEROPT_H);
+    tileHighlight = new Image(":/img/tile_highlight.png");
+    towerOptions.push_back(new Image(":/img/fire.png"));
+    towerOptions.push_back(new Image(":/img/ice.png"));
+    towerOptions.push_back(new Image(":/img/rock.png"));
+    towerOptHighlight = new Image(":/img/toweroption_h.png");
 
     for(int i = 0; i<3; i++){
-        fire_upgrade.push_back(new Image(CONSTANTS::UPGRADE_FIRE_BASE));
-        ice_upgrade.push_back(new Image(CONSTANTS::UPGRADE_ICE_BASE));
-        earth_upgrade.push_back(new Image(CONSTANTS::UPGRADE_EARTH_BASE));
+        fire_upgrade.push_back(new Image(":/img/fire_icon_base.png"));
+        ice_upgrade.push_back(new Image(":/img/ice_icon_base.png"));
+        earth_upgrade.push_back(new Image(":/img/rock_icon_base.png"));
     }
-    upgrade_icon.push_back(new Image(CONSTANTS::UPGRADE_STRENGTH));
-    upgrade_icon.push_back(new Image(CONSTANTS::UPGRADE_RANGE));
-    upgrade_icon.push_back(new Image(CONSTANTS::UPGRADE_RATE));
+    upgrade_icon.push_back(new Image(":/img/strength_icon.png"));
+    upgrade_icon.push_back(new Image(":/img/target_icon.png"));
+    upgrade_icon.push_back(new Image(":/img/time_icon.png"));
 
     continue_button = new Button(mergeChars("continue",0.25,NORMAL), mergeChars("continue",0.25,ACTIVE));
 
@@ -454,92 +454,92 @@ void Game::loadInGame(){
 }
 
 void Game::fillCharReferences(){
-    letterChars.push_back(new Image(CHARS::CHAR_0));
-    letterChars.push_back(new Image(CHARS::CHAR_1));
-    letterChars.push_back(new Image(CHARS::CHAR_2));
-    letterChars.push_back(new Image(CHARS::CHAR_3));
-    letterChars.push_back(new Image(CHARS::CHAR_4));
-    letterChars.push_back(new Image(CHARS::CHAR_5));
-    letterChars.push_back(new Image(CHARS::CHAR_6));
-    letterChars.push_back(new Image(CHARS::CHAR_7));
-    letterChars.push_back(new Image(CHARS::CHAR_8));
-    letterChars.push_back(new Image(CHARS::CHAR_9));
-    letterChars.push_back(new Image(CHARS::CHAR_A));
-    letterChars.push_back(new Image(CHARS::CHAR_B));
-    letterChars.push_back(new Image(CHARS::CHAR_C));
-    letterChars.push_back(new Image(CHARS::CHAR_D));
-    letterChars.push_back(new Image(CHARS::CHAR_E));
-    letterChars.push_back(new Image(CHARS::CHAR_F));
-    letterChars.push_back(new Image(CHARS::CHAR_G));
-    letterChars.push_back(new Image(CHARS::CHAR_H));
-    letterChars.push_back(new Image(CHARS::CHAR_I));
-    letterChars.push_back(new Image(CHARS::CHAR_J));
-    letterChars.push_back(new Image(CHARS::CHAR_K));
-    letterChars.push_back(new Image(CHARS::CHAR_L));
-    letterChars.push_back(new Image(CHARS::CHAR_M));
-    letterChars.push_back(new Image(CHARS::CHAR_N));
-    letterChars.push_back(new Image(CHARS::CHAR_O));
-    letterChars.push_back(new Image(CHARS::CHAR_P));
-    letterChars.push_back(new Image(CHARS::CHAR_Q));
-    letterChars.push_back(new Image(CHARS::CHAR_R));
-    letterChars.push_back(new Image(CHARS::CHAR_S));
-    letterChars.push_back(new Image(CHARS::CHAR_T));
-    letterChars.push_back(new Image(CHARS::CHAR_U));
-    letterChars.push_back(new Image(CHARS::CHAR_V));
-    letterChars.push_back(new Image(CHARS::CHAR_W));
-    letterChars.push_back(new Image(CHARS::CHAR_X));
-    letterChars.push_back(new Image(CHARS::CHAR_Y));
-    letterChars.push_back(new Image(CHARS::CHAR_Z));
+    letterChars.push_back(new Image(":/img/characters/Normal/0.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/1.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/2.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/3.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/4.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/5.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/6.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/7.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/8.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/9.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/A.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/B.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/C.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/D.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/E.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/F.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/G.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/H.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/I.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/J.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/K.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/L.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/M.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/N.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/O.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/P.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/Q.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/R.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/S.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/T.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/U.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/V.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/W.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/X.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/Y.png"));
+    letterChars.push_back(new Image(":/img/characters/Normal/Z.png"));
 
-    letterCharsAct.push_back(new Image(CHARS::CHAR_0_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_1_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_2_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_3_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_4_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_5_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_6_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_7_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_8_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_9_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_A_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_B_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_C_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_D_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_E_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_F_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_G_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_H_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_I_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_J_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_K_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_L_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_M_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_N_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_O_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_P_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_Q_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_R_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_S_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_T_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_U_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_V_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_W_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_X_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_Y_ACT));
-    letterCharsAct.push_back(new Image(CHARS::CHAR_Z_ACT));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/0.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/1.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/2.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/3.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/4.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/5.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/6.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/7.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/8.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/9.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/A.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/B.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/C.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/D.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/E.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/F.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/G.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/H.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/I.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/J.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/K.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/L.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/M.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/N.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/O.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/P.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/Q.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/R.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/S.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/T.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/U.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/V.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/W.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/X.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/Y.png"));
+    letterCharsAct.push_back(new Image(":/img/characters/Active/Z.png"));
 
-    letterCharsRed.push_back(new Image(CHARS::CHAR_0_RED));
-    letterCharsRed.push_back(new Image(CHARS::CHAR_1_RED));
-    letterCharsRed.push_back(new Image(CHARS::CHAR_2_RED));
-    letterCharsRed.push_back(new Image(CHARS::CHAR_3_RED));
-    letterCharsRed.push_back(new Image(CHARS::CHAR_4_RED));
-    letterCharsRed.push_back(new Image(CHARS::CHAR_5_RED));
-    letterCharsRed.push_back(new Image(CHARS::CHAR_6_RED));
-    letterCharsRed.push_back(new Image(CHARS::CHAR_7_RED));
-    letterCharsRed.push_back(new Image(CHARS::CHAR_8_RED));
-    letterCharsRed.push_back(new Image(CHARS::CHAR_9_RED));
+    letterCharsRed.push_back(new Image(":/img/characters/Red/0.png"));
+    letterCharsRed.push_back(new Image(":/img/characters/Red/1.png"));
+    letterCharsRed.push_back(new Image(":/img/characters/Red/2.png"));
+    letterCharsRed.push_back(new Image(":/img/characters/Red/3.png"));
+    letterCharsRed.push_back(new Image(":/img/characters/Red/4.png"));
+    letterCharsRed.push_back(new Image(":/img/characters/Red/5.png"));
+    letterCharsRed.push_back(new Image(":/img/characters/Red/6.png"));
+    letterCharsRed.push_back(new Image(":/img/characters/Red/7.png"));
+    letterCharsRed.push_back(new Image(":/img/characters/Red/8.png"));
+    letterCharsRed.push_back(new Image(":/img/characters/Red/9.png"));
 
-    specialChars.push_back(new Image(CHARS::CHAR_SPACE));
+    specialChars.push_back(new Image(":/img/characters/space.png"));
 }
 
 void Game::cleanInGame(){
@@ -573,7 +573,7 @@ void Game::cleanPause(){
 
 void Game::buildMap(){
     for(const auto d : CONSTANTS::MAP)
-        d==0 ?  map.push_back(new Tile(CONSTANTS::GRASS_TILE)) : map.push_back(new Tile(CONSTANTS::DIRT_TILE,d));
+        d==0 ?  map.push_back(new Tile(":/img/grass_tile.png")) : map.push_back(new Tile(":/img/dirt_tile.png",d));
 
     int xPos = 50;
     int yPos = 50;
@@ -607,21 +607,21 @@ void Game::selectTile(Tile* t){
             case 0:
                 if(getScore() >= Tower::getCost(curTowerType)){
                     updateScore(-Tower::getCost(curTowerType));
-                    towers.push_back(new Tower(CONSTANTS::TOWER_FIRE, *t->getRect()));
+                    towers.push_back(new Tower(":/img/fire.png", *t->getRect()));
                     t->setOccupied(true);
                 }
                 break;
             case 1:
                 if(getScore() >= Tower::getCost(curTowerType)){
                     updateScore(-Tower::getCost(curTowerType));
-                    towers.push_back(new Tower(CONSTANTS::TOWER_ICE, *t->getRect()));
+                    towers.push_back(new Tower(":/img/ice.png", *t->getRect()));
                     t->setOccupied(true);
                 }
                 break;
             case 2:
                 if(getScore() >= Tower::getCost(curTowerType)){
                     updateScore(-Tower::getCost(curTowerType));
-                    towers.push_back(new Tower(CONSTANTS::TOWER_EARTH, *t->getRect()));
+                    towers.push_back(new Tower(":/img/rock.png", *t->getRect()));
                     t->setOccupied(true);
                 }
                 break;
@@ -673,270 +673,20 @@ Image* Game::mergeChars(std::string word, double scale, Chars c){
     Image* image = new Image();
 
     for(size_t i = 0; i < word.length(); i++){
+
         if(c == ACTIVE){
-            switch(word[i]){
-            case '0':
-                appendChar(letterCharsAct[0], scale, image);
-                break;
-            case '1':
-                appendChar(letterCharsAct[1], scale, image);
-                break;
-            case '2':
-                appendChar(letterCharsAct[2], scale, image);
-                break;
-            case '3':
-                appendChar(letterCharsAct[3], scale, image);
-                break;
-            case '4':
-                appendChar(letterCharsAct[4], scale, image);
-                break;
-            case '5':
-                appendChar(letterCharsAct[5], scale, image);
-                break;
-            case '6':
-                appendChar(letterCharsAct[6], scale, image);
-                break;
-            case '7':
-                appendChar(letterCharsAct[7], scale, image);
-                break;
-            case '8':
-                appendChar(letterCharsAct[8], scale, image);
-                break;
-            case '9':
-                appendChar(letterCharsAct[9], scale, image);
-                break;
-            case 'a':
-                appendChar(letterCharsAct[10], scale, image);
-                break;
-            case 'b':
-                appendChar(letterCharsAct[11], scale, image);
-                break;
-            case 'c':
-                appendChar(letterCharsAct[12], scale, image);
-                break;
-            case 'd':
-                appendChar(letterCharsAct[13], scale, image);
-                break;
-            case 'e':
-                appendChar(letterCharsAct[14], scale, image);
-                break;
-            case 'f':
-                appendChar(letterCharsAct[15], scale, image);
-                break;
-            case 'g':
-                appendChar(letterCharsAct[16], scale, image);
-                break;
-            case 'h':
-                appendChar(letterCharsAct[17], scale, image);
-                break;
-            case 'i':
-                appendChar(letterCharsAct[18], scale, image);
-                break;
-            case 'j':
-                appendChar(letterCharsAct[19], scale, image);
-                break;
-            case 'k':
-                appendChar(letterCharsAct[20], scale, image);
-                break;
-            case 'l':
-                appendChar(letterCharsAct[21], scale, image);
-                break;
-            case 'm':
-                appendChar(letterCharsAct[22], scale, image);
-                break;
-            case 'n':
-                appendChar(letterCharsAct[23], scale, image);
-                break;
-            case 'o':
-                appendChar(letterCharsAct[24], scale, image);
-                break;
-            case 'p':
-                appendChar(letterCharsAct[25], scale, image);
-                break;
-            case 'q':
-                appendChar(letterCharsAct[26], scale, image);
-                break;
-            case 'r':
-                appendChar(letterCharsAct[27], scale, image);
-                break;
-            case 's':
-                appendChar(letterCharsAct[28], scale, image);
-                break;
-            case 't':
-                appendChar(letterCharsAct[29], scale, image);
-                break;
-            case 'u':
-                appendChar(letterCharsAct[30], scale, image);
-                break;
-            case 'v':
-                appendChar(letterCharsAct[31], scale, image);
-                break;
-            case 'w':
-                appendChar(letterCharsAct[32], scale, image);
-                break;
-            case 'x':
-                appendChar(letterCharsAct[33], scale, image);
-                break;
-            case 'y':
-                appendChar(letterCharsAct[34], scale, image);
-                break;
-            case 'z':
-                appendChar(letterCharsAct[35], scale, image);
-                break;
-            case ' ':
-                appendChar(specialChars[0], scale, image);
-                break;
-        }
+            if ((int)(word[i]) >= 97) appendChar(letterCharsAct[((int)(word[i]))-87], scale, image);
+            else if ((int)(word[i]) >= 48) appendChar(letterCharsAct[((int)(word[i]))-48], scale, image);
+
         }
         else if(c == NORMAL){
-            switch(word[i]){
-                case '0':
-                    appendChar(letterChars[0], scale, image);
-                    break;
-                case '1':
-                    appendChar(letterChars[1], scale, image);
-                    break;
-                case '2':
-                    appendChar(letterChars[2], scale, image);
-                    break;
-                case '3':
-                    appendChar(letterChars[3], scale, image);
-                    break;
-                case '4':
-                    appendChar(letterChars[4], scale, image);
-                    break;
-                case '5':
-                    appendChar(letterChars[5], scale, image);
-                    break;
-                case '6':
-                    appendChar(letterChars[6], scale, image);
-                    break;
-                case '7':
-                    appendChar(letterChars[7], scale, image);
-                    break;
-                case '8':
-                    appendChar(letterChars[8], scale, image);
-                    break;
-                case '9':
-                    appendChar(letterChars[9], scale, image);
-                    break;
-                case 'a':
-                    appendChar(letterChars[10], scale, image);
-                    break;
-                case 'b':
-                    appendChar(letterChars[11], scale, image);
-                    break;
-                case 'c':
-                    appendChar(letterChars[12], scale, image);
-                    break;
-                case 'd':
-                    appendChar(letterChars[13], scale, image);
-                    break;
-                case 'e':
-                    appendChar(letterChars[14], scale, image);
-                    break;
-                case 'f':
-                    appendChar(letterChars[15], scale, image);
-                    break;
-                case 'g':
-                    appendChar(letterChars[16], scale, image);
-                    break;
-                case 'h':
-                    appendChar(letterChars[17], scale, image);
-                    break;
-                case 'i':
-                    appendChar(letterChars[18], scale, image);
-                    break;
-                case 'j':
-                    appendChar(letterChars[19], scale, image);
-                    break;
-                case 'k':
-                    appendChar(letterChars[20], scale, image);
-                    break;
-                case 'l':
-                    appendChar(letterChars[21], scale, image);
-                    break;
-                case 'm':
-                    appendChar(letterChars[22], scale, image);
-                    break;
-                case 'n':
-                    appendChar(letterChars[23], scale, image);
-                    break;
-                case 'o':
-                    appendChar(letterChars[24], scale, image);
-                    break;
-                case 'p':
-                    appendChar(letterChars[25], scale, image);
-                    break;
-                case 'q':
-                    appendChar(letterChars[26], scale, image);
-                    break;
-                case 'r':
-                    appendChar(letterChars[27], scale, image);
-                    break;
-                case 's':
-                    appendChar(letterChars[28], scale, image);
-                    break;
-                case 't':
-                    appendChar(letterChars[29], scale, image);
-                    break;
-                case 'u':
-                    appendChar(letterChars[30], scale, image);
-                    break;
-                case 'v':
-                    appendChar(letterChars[31], scale, image);
-                    break;
-                case 'w':
-                    appendChar(letterChars[32], scale, image);
-                    break;
-                case 'x':
-                    appendChar(letterChars[33], scale, image);
-                    break;
-                case 'y':
-                    appendChar(letterChars[34], scale, image);
-                    break;
-                case 'z':
-                    appendChar(letterChars[35], scale, image);
-                    break;
-                case ' ':
-                    appendChar(specialChars[0], scale, image);
-                    break;
+            if ((int)(word[i]) >= 97) appendChar(letterChars[((int)(word[i]))-87], scale, image);
+            else if ((int)(word[i]) >= 48) appendChar(letterChars[((int)(word[i]))-48], scale, image);
+                else if ((int)(word[i] = 32)) appendChar(specialChars[0], scale, image);
             }
-        }
         else if(c == RED){
-            switch(word[i]){
-                case '0':
-                    appendChar(letterCharsRed[0], scale, image);
-                    break;
-                case '1':
-                    appendChar(letterCharsRed[1], scale, image);
-                    break;
-                case '2':
-                    appendChar(letterCharsRed[2], scale, image);
-                    break;
-                case '3':
-                    appendChar(letterCharsRed[3], scale, image);
-                    break;
-                case '4':
-                    appendChar(letterCharsRed[4], scale, image);
-                    break;
-                case '5':
-                    appendChar(letterCharsRed[5], scale, image);
-                    break;
-                case '6':
-                    appendChar(letterCharsRed[6], scale, image);
-                    break;
-                case '7':
-                    appendChar(letterCharsRed[7], scale, image);
-                    break;
-                case '8':
-                    appendChar(letterCharsRed[8], scale, image);
-                    break;
-                case '9':
-                    appendChar(letterCharsRed[9], scale, image);
-                    break;
+            if ((int)(word[i]) >= 48) appendChar(letterCharsRed[((int)(word[i]))-48], scale, image);
             }
-        }
     }
 
     return image;
@@ -958,235 +708,15 @@ void Game::printChar(Image* character, double scale, QPainter& p, int& x, int& y
 void Game::paintChar(std::string word, double scale, QPainter& p, int x, int y, bool active){
     for(size_t i = 0; i < word.length(); i++){
         if(active){
-            switch(word[i]){
-            case '0':
-                printChar(letterCharsAct[0], scale, p, x, y);
-                break;
-            case '1':
-                printChar(letterCharsAct[1], scale, p, x, y);
-                break;
-            case '2':
-                printChar(letterCharsAct[2], scale, p, x, y);
-                break;
-            case '3':
-                printChar(letterCharsAct[3], scale, p, x, y);
-                break;
-            case '4':
-                printChar(letterCharsAct[4], scale, p, x, y);
-                break;
-            case '5':
-                printChar(letterCharsAct[5], scale, p, x, y);
-                break;
-            case '6':
-                printChar(letterCharsAct[6], scale, p, x, y);
-                break;
-            case '7':
-                printChar(letterCharsAct[7], scale, p, x, y);
-                break;
-            case '8':
-                printChar(letterCharsAct[8], scale, p, x, y);
-                break;
-            case '9':
-                printChar(letterCharsAct[9], scale, p, x, y);
-                break;
-            case 'a':
-                printChar(letterCharsAct[10], scale, p, x, y);
-                break;
-            case 'b':
-                printChar(letterCharsAct[11], scale, p, x, y);
-                break;
-            case 'c':
-                printChar(letterCharsAct[12], scale, p, x, y);
-                break;
-            case 'd':
-                printChar(letterCharsAct[13], scale, p, x, y);
-                break;
-            case 'e':
-                printChar(letterCharsAct[14], scale, p, x, y);
-                break;
-            case 'f':
-                printChar(letterCharsAct[15], scale, p, x, y);
-                break;
-            case 'g':
-                printChar(letterCharsAct[16], scale, p, x, y);
-                break;
-            case 'h':
-                printChar(letterCharsAct[17], scale, p, x, y);
-                break;
-            case 'i':
-                printChar(letterCharsAct[18], scale, p, x, y);
-                break;
-            case 'j':
-                printChar(letterCharsAct[19], scale, p, x, y);
-                break;
-            case 'k':
-                printChar(letterCharsAct[20], scale, p, x, y);
-                break;
-            case 'l':
-                printChar(letterCharsAct[21], scale, p, x, y);
-                break;
-            case 'm':
-                printChar(letterCharsAct[22], scale, p, x, y);
-                break;
-            case 'n':
-                printChar(letterCharsAct[23], scale, p, x, y);
-                break;
-            case 'o':
-                printChar(letterCharsAct[24], scale, p, x, y);
-                break;
-            case 'p':
-                printChar(letterCharsAct[25], scale, p, x, y);
-                break;
-            case 'q':
-                printChar(letterCharsAct[26], scale, p, x, y);
-                break;
-            case 'r':
-                printChar(letterCharsAct[27], scale, p, x, y);
-                break;
-            case 's':
-                printChar(letterCharsAct[28], scale, p, x, y);
-                break;
-            case 't':
-                printChar(letterCharsAct[29], scale, p, x, y);
-                break;
-            case 'u':
-                printChar(letterCharsAct[30], scale, p, x, y);
-                break;
-            case 'v':
-                printChar(letterCharsAct[31], scale, p, x, y);
-                break;
-            case 'w':
-                printChar(letterCharsAct[32], scale, p, x, y);
-                break;
-            case 'x':
-                printChar(letterCharsAct[33], scale, p, x, y);
-                break;
-            case 'y':
-                printChar(letterCharsAct[34], scale, p, x, y);
-                break;
-            case 'z':
-                printChar(letterCharsAct[35], scale, p, x, y);
-                break;
-            case ' ':
-                printChar(specialChars[0], scale, p, x, y);
-                break;
-        }
+            if ((int)(word[i]) >= 97) printChar(letterCharsAct[((int)(word[i]))-87], scale, p, x, y);
+            else if ((int)(word[i]) >= 48) printChar(letterCharsAct[((int)(word[i]))-48], scale, p, x, y);
+            else if ((int)(word[i] = 32)) printChar(specialChars[0], scale, p, x, y);
         }
         else{
-            switch(word[i]){
-                case '0':
-                    printChar(letterChars[0], scale, p, x, y);
-                    break;
-                case '1':
-                    printChar(letterChars[1], scale, p, x, y);
-                    break;
-                case '2':
-                    printChar(letterChars[2], scale, p, x, y);
-                    break;
-                case '3':
-                    printChar(letterChars[3], scale, p, x, y);
-                    break;
-                case '4':
-                    printChar(letterChars[4], scale, p, x, y);
-                    break;
-                case '5':
-                    printChar(letterChars[5], scale, p, x, y);
-                    break;
-                case '6':
-                    printChar(letterChars[6], scale, p, x, y);
-                    break;
-                case '7':
-                    printChar(letterChars[7], scale, p, x, y);
-                    break;
-                case '8':
-                    printChar(letterChars[8], scale, p, x, y);
-                    break;
-                case '9':
-                    printChar(letterChars[9], scale, p, x, y);
-                    break;
-                case 'a':
-                    printChar(letterChars[10], scale, p, x, y);
-                    break;
-                case 'b':
-                    printChar(letterChars[11], scale, p, x, y);
-                    break;
-                case 'c':
-                    printChar(letterChars[12], scale, p, x, y);
-                    break;
-                case 'd':
-                    printChar(letterChars[13], scale, p, x, y);
-                    break;
-                case 'e':
-                    printChar(letterChars[14], scale, p, x, y);
-                    break;
-                case 'f':
-                    printChar(letterChars[15], scale, p, x, y);
-                    break;
-                case 'g':
-                    printChar(letterChars[16], scale, p, x, y);
-                    break;
-                case 'h':
-                    printChar(letterChars[17], scale, p, x, y);
-                    break;
-                case 'i':
-                    printChar(letterChars[18], scale, p, x, y);
-                    break;
-                case 'j':
-                    printChar(letterChars[19], scale, p, x, y);
-                    break;
-                case 'k':
-                    printChar(letterChars[20], scale, p, x, y);
-                    break;
-                case 'l':
-                    printChar(letterChars[21], scale, p, x, y);
-                    break;
-                case 'm':
-                    printChar(letterChars[22], scale, p, x, y);
-                    break;
-                case 'n':
-                    printChar(letterChars[23], scale, p, x, y);
-                    break;
-                case 'o':
-                    printChar(letterChars[24], scale, p, x, y);
-                    break;
-                case 'p':
-                    printChar(letterChars[25], scale, p, x, y);
-                    break;
-                case 'q':
-                    printChar(letterChars[26], scale, p, x, y);
-                    break;
-                case 'r':
-                    printChar(letterChars[27], scale, p, x, y);
-                    break;
-                case 's':
-                    printChar(letterChars[28], scale, p, x, y);
-                    break;
-                case 't':
-                    printChar(letterChars[29], scale, p, x, y);
-                    break;
-                case 'u':
-                    printChar(letterChars[30], scale, p, x, y);
-                    break;
-                case 'v':
-                    printChar(letterChars[31], scale, p, x, y);
-                    break;
-                case 'w':
-                    printChar(letterChars[32], scale, p, x, y);
-                    break;
-                case 'x':
-                    printChar(letterChars[33], scale, p, x, y);
-                    break;
-                case 'y':
-                    printChar(letterChars[34], scale, p, x, y);
-                    break;
-                case 'z':
-                    printChar(letterChars[35], scale, p, x, y);
-                    break;
-                case ' ':
-                    printChar(specialChars[0], scale, p, x, y);
-                    break;
-            }
-        }
+            if ((int)(word[i]) >= 97) printChar(letterChars[((int)(word[i]))-87], scale, p, x, y);
+            else if ((int)(word[i]) >= 48) printChar(letterChars[((int)(word[i]))-48], scale, p, x, y);
+                else if ((int)(word[i] = 32)) printChar(specialChars[0], scale, p, x, y);
+         }
     }
 
 }
@@ -1204,14 +734,14 @@ Game::ToolTip::ToolTip(Image* s, Image* s_u, Image* c, Image* c_a) : upgrade(tru
     cost_amount = c_a;
     stat = s;
     stat_upgrade = s_u;
-    background = new Image(TOOLTIP::BASE);
+    background = new Image(":/img/tooltip_base.png");
 }
 
 Game::ToolTip::ToolTip(Image* c, Image* c_a) : upgrade(false)
 {
     stat = c;
     stat_upgrade = c_a;
-    background = new Image(TOOLTIP::BASE);
+    background = new Image(":/img/tooltip_base.png");
 }
 
 Game::ToolTip::~ToolTip(){

@@ -10,9 +10,6 @@
 
 
 namespace TOWER{
-    const QString TOWER_FIRE = "fire.png";
-    const QString TOWER_ICE = "ice.png";
-    const QString TOWER_EARTH = "rock.png";
 }
 
 

@@ -9,16 +9,6 @@
 
 enum class Enemy_Type{NORMAL, BADASS, BAT};
 
-
-namespace ENEMY {
-    const QString NORMAL_L = "white ghost left.png";
-    const QString NORMAL_R = "white ghost right.png";
-    const QString BADASS_L = "red ghost left.png";
-    const QString BADASS_R = "red ghost right.png";
-    const QString BAT_L = "bat_l.png";
-    const QString BAT_R = "bat_r.png";
-}
-
 class Enemy : public GameObject
 {
 public:
