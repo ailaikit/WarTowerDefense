@@ -9,10 +9,6 @@
 
 
 
-namespace TOWER{
-}
-
-
 enum Type{FIRE,ICE,EARTH};
 
 

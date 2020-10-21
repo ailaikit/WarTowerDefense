@@ -7,8 +7,6 @@
 class Button : public Image
 {
 public:
-
-    Button(QString filePath, QString h_filePath, qreal scale);
     Button(Image* passive, Image* active);
     ~Button();
 
